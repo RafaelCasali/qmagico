@@ -1,0 +1,401 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("../fonts/style.css");
+
+* {border:0; margin: 0; padding: 0; list-style: none; text-decoration: none}
+
+body {font-family: 'proximaregular'; height: 100%;}
+html {height: 100%}
+
+.clear {clear: both;}
+
+/*---------------------------------------------------------------------------------------------------------- */ 
+/*---------------------------------------------------------------------------------------------------------- */ 
+/*---------------------------------------------------------------------------------------------------------- */ 
+/*---------------------------------------------------------------------------------------------------------- */ 
+/*---------------------------------------------------------------------------------------------------------- */ 
+/*---------------------------------------------------------------------------------------------------------- */ 
+
+ .header {padding: 20px 0;  font-size: 18px;}
+	.header img {float: left;}
+	.header .menu {float: left; margin: 9px 0 0 10px;}
+		.header .menu li {float: left; margin: 0 0 0 15px;}
+		.header .menu li a {color: #9f9faa; transition: 0.5s}
+		.header .menu li a:hover {color: #3f8fe0; transition: 0.5s}
+	.header .user {float: right; margin: 4	px 0 0 0}
+		.header .user a {float: left; border-radius: 25px; background: none; color: #9f9faa; padding: 5px 15px; transition: 0.5s; margin: 0 0 0 15px}
+		.header .user .entrar:hover {color: #3f8fe0}
+		.header .user .criar {float: left; border-radius: 25px; background: #3f8fe0; color: #FFF; padding: 5px 15px; transition: 0.5s}
+
+.banner {color: #FFF; text-align: center; background: url(../images/fundo-nuvem.png); padding: 90px 0 160px 0;}
+	.banner .cont {width: 550px; margin: 0 auto}
+	.banner .titulo {font-size: 46px; margin: 0 0 15px 0; font-weight: 100}
+	.banner .frase {font-size: 32px; margin: 0 0 35px 0; font-weight: 100}
+	.banner a {font-size: 22px; border-radius: 25px; color: #3f8fe0; background: url(../images/icones/play.svg) no-repeat left center #FFF; padding: 15px 25px 15px 55px; background-position: 25px; }
+		
+
+.clientes {padding: 25px 0; border: 1px solid #f7f7f7; text-align: center}
+	.clientes img {margin: 0 25px; vertical-align: middle;}
+
+.cadernos {padding: 50px 0 0 0; text-align: center; border-bottom: 1px solid #f7f7f7}
+	.cadernos h2 {color: #2e475a;}
+	.cadernos p {color: #7f8b94; margin: 15px 0}	
+
+	.cadernos .btts {width: 345px; margin: 0 auto; padding: 15px 0 0 0}
+		.cadernos .btts .btt {border: 1px solid #e6e5e6; padding: 15px 0; width: 170px; font-size: 22px; color: #7f8b94; transition: 0.2s; cursor: pointer; float: left;}
+		.cadernos .btts .btt:hover {border: 1px solid #6296a2; padding: 15px 0; color: #FFF; background: #6296a2; transition: 0.2s}
+		.cadernos .btts .left {border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
+		.cadernos .btts .right {border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+
+	.cadernos .printn {position: absolute; z-index: -99; opacity: 0; transition: 0.2s}
+	.cadernos .printv {position: relative; z-index: 0; opacity: 1; transition: 0.2s}
+	.cadernos .printv {background: url(../images/browser.png) no-repeat center top; padding: 80px 0 0 0; text-align: center; margin: 100px 0 0 0}
+		.cadernos .printv > .item {background-color: #FFF; background-repeat: no-repeat; background-position: 20px; box-shadow: #e2e2e2 0px 2px 10px 3px; padding: 15px 15px 15px 75px; width: 200px; text-align: left; border-radius: 5px; color: #72858; position: absolute;}
+		.cadernos .printv > .item .reta {background: #000; opacity: 0.2; position: absolute;}
+		.cadernos .printv > .item .circulo {width: 10px; height: 10px; background: #FFF; border-radius: 50%; float: right; box-shadow: #000 0px 0px 5px 3px;}
+
+		.cadernos .printv .crie {background-image: url(../images/icones/check.svg); margin: 265px 0 0 -60px}
+			.cadernos .printv .crie .reta {width: 45px; height: 5px; margin: -20px 0 0 215px}
+			.cadernos .printv .crie .circulo {margin-top: -2px;}
+
+		.cadernos .printv .organize {background-image: url(../images/icones/list.svg); margin: -160px 0 0 180px}
+			.cadernos .printv .organize .reta {width: 5px; height: 120px; margin: 15px 0 0 -25px;}
+			.cadernos .printv .organize .circulo {margin: 115px -2px 0 0px}
+
+		.cadernos .printv .libere {background-image: url(../images/icones/lock.svg); margin: -160px 0 0 720px}
+			.cadernos .printv .libere .reta {width: 5px; height: 120px; margin: 15px 0 0 -25px;}
+			.cadernos .printv .libere .circulo {margin: 115px -2px 0 0px}		
+
+		.cadernos .printv .icone {background-image: url(../images/icones/eye.svg); margin: 217px 0 0 -75px}
+			.cadernos .printv .icone .reta {width: 45px; height: 5px; margin: -20px 0 0 215px}
+			.cadernos .printv .icone .circulo {margin-top: -2px;}
+
+		.cadernos .printv .intro {background-image: url(../images/icones/info.svg); margin: -160px 0 0 180px}
+			.cadernos .printv .intro .reta {width: 5px; height: 120px; margin: 15px 0 0 -25px;}
+			.cadernos .printv .intro .circulo {margin: 115px -2px 0 0px}
+
+		.cadernos .printv .marcador {background-image: url(../images/icones/chart.svg); margin: 16px 0 0 836px}
+			.cadernos .printv .marcador .reta {width: 5px; height: 120px; margin: 15px 0 0 -25px;}
+			.cadernos .printv .marcador .circulo {margin: 115px -2px 0 0px}					
+
+.correcao {padding: 50px 0; text-align: center; border-bottom: 1px solid #f7f7f7}
+	.correcao h2 {color: #2e475a;}
+	.correcao p {color: #7f8b94; margin: 15px 0}	
+
+	.correcao .exemplo {}
+		.correcao .exemplo .word {float: left; margin: 90px 0 0 0}
+		.correcao .exemplo .exercicio {float: left; margin: 0;}
+		.correcao .exemplo .exercicio img {border-radius: 50%; box-shadow: #000 0px 0px 21px -6px; position: relative; z-index: 9; float: left;}
+		.correcao .exemplo .exercicio .reta {background: #000; opacity: 0.2; position: absolute; width: 35px; height: 5px; position: relative; z-index: -9; float: left; margin: 150px 0 0 13px}
+			.correcao .exemplo .exercicio .reta .circulo {width: 10px; height: 10px; background: #FFF; border-radius: 50%; float: right; box-shadow: #000 0px 0px 5px 3px; margin: -3px 30px 0 0}
+		.correcao .exemplo .exercicio .seta {position: relative; z-index: -9; float: left;}
+			.correcao .exemplo .exercicio .seta div {background: #f1f2f2}
+			.correcao .exemplo .exercicio .seta .seta-reta {width: 150px; height: 30px; margin: 140px 0 0 0}
+			.correcao .exemplo .exercicio .seta .seta-c {width: 120px; height: 25px; transform: rotate(225deg); position: absolute; margin: -77px 0 0 39px;}
+			.correcao .exemplo .exercicio .seta .seta-b {width: 120px; height: 25px; transform: rotate(-225deg); position: absolute; margin: 22px 0 0 39px;}
+
+.conteudo {padding: 50px 0; text-align: center; border-bottom: 1px solid #f7f7f7;}
+	.conteudo h2 {color: #2e475a;}
+	.conteudo p {color: #7f8b94; margin: 15px 0;}	
+
+	.conteudo .itens {}
+		.conteudo .item {float: left; width: 25%; margin-top: 50px;}
+			.conteudo .item img {}
+			.conteudo .item img p {padding: 0 15px; margin: 15px 0}
+		.conteudo .item .extra {opacity: 0; transition: 0.5s; position: relative; z-index: -99; border: 1px solid #e2e2e2; box-shadow: #e2e2e2 0px 3px 12px 3px; padding: 0 5px; margin-top: 15px;}
+			.conteudo .item .extra p {font-weight: 100; font-size: 14px;}
+			.conteudo .item .mais {position: absolute; font-size: 60px; color: #e2e2e2; margin: -195px 0 0 260px;}
+			.conteudo .item .extra .seta {width: 10px; height: 10px; transform: rotate(45deg); position: absolute; margin: -6px 0 0 127px; background: #FFF; box-shadow: #e2e2e2 -2px -2px 4px -1px; border: 1px solid #e2e2e2; border-bottom: none; border-right: none;}
+			.conteudo .item:hover .extra {opacity: 1.0; transition: 0.5s; position: relative; z-index: 99;border: 1px solid #e2e2e2; box-shadow: #e2e2e2 0px 3px 12px 3px; padding: 0 5px; margin-top: 15px;}
+
+.acompanhamento {padding: 50px 0; border-bottom: 1px solid #f7f7f7}
+	.acompanhamento .texto {float: left; width: 470px; margin-top: 65px;}
+		.acompanhamento .texto h2 {color: #2e475a;}
+		.acompanhamento .texto p {color: #7f8b94; margin: 15px 0}	
+	.acompanhamento img {float: right;}
+
+.qualquer {padding: 50px 0 0 0; border-bottom: 1px solid #f7f7f7}
+	.qualquer .cel {background: url(../images/mobile.png) no-repeat; float: left; padding: 80px 100px 0 163px;}
+		.qualquer .cel img {}
+	.qualquer .texto {float: right; text-align: left; width: 500px; margin-top: 150px}
+		.qualquer .texto h2 {color: #2e475a;}
+		.qualquer .texto p {color: #7f8b94; margin: 15px 0}	
+
+.atualizados {padding: 50px 0; border-bottom: 1px solid #f7f7f7; text-align: center}
+	.atualizados h2 {color: #2e475a;}
+	.atuazalidos p {color: #7f8b94; margin: 15px 0}	
+
+	.atualizados .item {width: 70%; margin: 0 auto; padding-top: 50px}
+		.atualizados .item .itens {width: 25%; text-align: center; float: left;}
+		.atualizados .item .itens img {}
+		.atualizados .item .itens p {width: 100%; margin-top: 10px}
+
+.experimente {background: url(../images/montanhas.png); text-align: center; padding: 150px 0; background-size: auto 100%}
+	.experimente h2 {color: #FFF; padding: 0 0 10px 0}
+	.experimente p {color: #FFF;}
+
+	.experimente form {margin-top: 50px; color: #FFF; font-size: 16px; margin-left: -45px;}
+		.experimente form input {border-radius: 5px; background: #FFF; padding: 15px 20px; font-size: 18px}
+		.experimente form button {border-radius: 25px; background: #FFF; padding: 13px 20px; margin: 0px 0 0 10px; position: absolute; cursor: pointer}
+
+.rodape {padding: 25px 0; color: #033d50}
+	.rodape .texto {float: left; width: 36%}
+	.rodape .texto p {margin: -35px 0 0 45px;}
+	
+	.rodape .menu {float: right; width: 57%}
+		.rodape .menu ul {float: left; width: 30%}
+		.rodape .menu ul .titulo {font-weight: 700}
+		.rodape .menu ul li {padding: 0 0 10px 0}
+
+@media screen and (min-width: 1130px) {  
+
+	h1 {font-size: 46px;}
+	h2 {font-size: 32px;}
+	h3 {font-size: 24px;}
+	h4 {}
+	h5 {}
+	h6 {}
+	p {font-size: 16px;}
+
+	.cont {width: 1120px; margin: 0 auto;}
+
+}
+
+/*---------------------------------------------------------------------------------------------------------- */ 
+/*---------------------------------------------------------------------------------------------------------- */ 
+/*---------------------------------------------------------------------------------------------------------- */ 
+/*---------------------------------------------------------------------------------------------------------- */ 
+/*---------------------------------------------------------------------------------------------------------- */ 
+/*---------------------------------------------------------------------------------------------------------- */ 
+
+
+
+@media screen and (min-width: 980px) and (max-width: 1130px) {  
+
+	h1 {font-size: 46px;}
+	h2 {font-size: 32px;}
+	h3 {font-size: 24px;}
+	h4 {}
+	h5 {}
+	h6 {}
+	p {font-size: 16px;}
+
+	.cont {width: 970px; margin: 0 auto}
+
+	.correcao .exemplo {}
+		.correcao .exemplo .word {float: left; margin: 80px 0 0 0}
+		.correcao .exemplo .exercicio {float: left; margin: 0 10px;}
+		.correcao .exemplo .exercicio img {width: 265px;}
+		.correcao .exemplo .exercicio .reta {margin: 140px 0 0 13px}
+			.correcao .exemplo .exercicio .reta .circulo {margin: -3px 30px 0 0}
+		.correcao .exemplo .exercicio .seta {}
+			.correcao .exemplo .exercicio .seta div {}
+			.correcao .exemplo .exercicio .seta .seta-reta {width: 130px; height: 20px; margin: 130px 0 0 0}
+			.correcao .exemplo .exercicio .seta .seta-c {width: 100px; height: 15px; margin: -58px 0 0 39px;}
+			.correcao .exemplo .exercicio .seta .seta-b {width: 100px; height: 15px; margin: 22px 0 0 39px;}
+		.correcao .exemplo .exercicior img {width: 410px; height: auto}
+
+
+	.cadernos .printv {background-size: 100%}
+
+	.cadernos .printv .crie {margin: 267px 0 0 661px}
+		.cadernos .printv .crie .reta {width: 45px; height: 5px; margin: -20px 0 0 -120px}
+		.cadernos .printv .crie .circulo {margin: -2px 40px 0 0;}
+	.cadernos .printv .organize {margin: -160px 0 0 106px}
+	.cadernos .printv .libere {margin: -160px 0 0 649px}
+
+	.cadernos .printv .icone {margin: 219px 0 0 661px}
+		.cadernos .printv .icone .reta {width: 45px; height: 5px; margin: -20px 0 0 -120px}
+		.cadernos .printv .icone .circulo {margin: -2px 40px 0 0;}
+	.cadernos .printv .intro {margin: -160px 0 0 105px}
+	.cadernos .printv .marcador {margin: -160px 0 0 620px}
+		.cadernos .printv .marcador .reta {margin: 15px 0 0px 0px; height: 291px;}
+		.cadernos .printv .marcador .circulo {margin: 288px -2px 0 0}
+
+	.conteudo .item .mais {margin: -216px 0 0 232px}
+
+	.qualquer .cel {padding: 66px 84px 0px 139px; background-size: 100%}
+		.qualquer .cel img {width: 197px; height: auto;}
+
+}
+
+@media screen and (min-width: 715px) and (max-width: 980px) {  
+
+	h1 {font-size: 46px;}
+	h2 {font-size: 32px;}
+	h3 {font-size: 24px;}
+	h4 {}
+	h5 {}
+	h6 {}
+	p {font-size: 16px;}
+
+	.cont {width: 700px; margin: 0 auto}
+
+	.correcao .exemplo {}
+		.correcao .exemplo .word {margin: 0; width: 100%}
+		.correcao .exemplo .exercicio {margin: 0;}
+		.correcao .exemplo .exercicio img {border-radius: 50%; box-shadow: #000 0px 0px 21px -6px; position: relative; z-index: 9; margin: 0 28%}
+		.correcao .exemplo .exercicio .reta {background: #000; opacity: 0.2; position: absolute; width: 5px; height: 25px; position: relative; z-index: -9; float: left; margin: 12px 0 0 346px}
+			.correcao .exemplo .exercicio .reta .circulo {width: 10px; height: 10px; background: #FFF; border-radius: 50%; float: right; box-shadow: #000 0px 0px 5px 3px; margin: -3px -2px 0 0}
+		.correcao .exemplo .exercicio .seta {position: relative; z-index: -9; transform: rotate(90deg); margin: -15px 0 0 50%;}
+			.correcao .exemplo .exercicio .seta div {background: #f1f2f2}
+			.correcao .exemplo .exercicio .seta .seta-reta {width: 150px; height: 30px; margin: 140px 0 0 0}
+			.correcao .exemplo .exercicio .seta .seta-c {width: 120px; height: 25px; transform: rotate(225deg); position: absolute; margin: -77px 0 0 39px;}
+			.correcao .exemplo .exercicio .seta .seta-b {width: 120px; height: 25px; transform: rotate(-225deg); position: absolute; margin: 22px 0 0 39px;}
+
+	.cadernos .printv {background-size: 100%; padding: 37px 0 0 0}
+		.cadernos .printv img {width: 70%; height: auto;}
+
+	.cadernos .printv > .item {font-size: 14px; width: 165px;}
+
+		.cadernos .printv .organize {margin: -109px 0 0 61px}
+			.cadernos .printv .organize .reta {height: 70px;}
+			.cadernos .printv .organize .circulo {margin: 62px -2px 0 0px}
+		.cadernos .printv .libere {margin: -109px 0 0 400px}
+			.cadernos .printv .libere .reta {height: 70px; margin-left: 23px}
+			.cadernos .printv .libere .circulo {margin: 62px -2px 0 0px}
+		.cadernos .printv .crie {margin: 112px 0 0 406px}
+			.cadernos .printv .crie .reta {width: 5px; height: 45px; margin: 15px}
+			.cadernos .printv .crie .circulo {margin: 36px -2px 0 0}
+
+		.cadernos .printv .intro {margin: -109px 0 0 62px}
+			.cadernos .printv .intro .reta {height: 70px;}
+			.cadernos .printv .intro .circulo {margin: 62px -2px 0 0px}
+		.cadernos .printv .marcador {margin: -109px 0 0 435px}
+			.cadernos .printv .marcador .reta {height: 196px;}
+			.cadernos .printv .marcador .circulo {margin: 190px -2px 0 0}
+		.cadernos .printv .icone {margin: 206px 0 0 431px}
+			.cadernos .printv .icone .reta {height: 25px; width: 5px; margin: -88px 0px 0 -22px}
+			.cadernos .printv .icone .circulo {margin: -3px -2px 0 0px}
+
+	.conteudo .item .extra .seta {margin: -6px 0 0 80px;}
+
+	.acompanhamento {text-align: center}
+		.acompanhamento .texto {margin-top: 0; text-align: center; width: 100%}
+		.acompanhamento img {float: none; margin-top: 15px}
+
+.qualquer {padding: 25px 0 0 0}
+	.qualquer .texto {width: 100%; text-align: center; margin-top: 15px;}
+	.qualquer .cel {margin-left: 15%}
+
+
+.experimente {}
+	.experimente form {}
+		.experimente form input {font-size: 16px; width: 227px}
+		.experimente form button {border-radius: 25px; background: #FFF; padding: 11px 5px; margin: 10px 0 0 9px; position: absolute; cursor: pointer;}
+
+	.rodape {font-size: 14px;}
+		.rodape .menu ul {width: 33%}
+
+	.conteudo .item .mais {display: none}
+
+}
+
+
+@media screen and (min-width: 715px) {  
+.menu-m, .mobile-dst {display: none}
+}
+
+@media screen and (min-width: 0px) and (max-width: 715px) {  
+
+	h1 {font-size: 38px;}
+	h2 {font-size: 22px;}
+	h3 {font-size: 18px;}
+	h4 {}
+	h5 {}
+	h6 {}
+	p {font-size: 14px;}
+
+	.cont {width: 98%; padding: 0 1%}
+
+	.conteudo .item .mais {display: none}
+
+
+
+	.menu-ma, .menu-mf {display: block; float: right; width: 30px; margin: 10px 0 0 0; cursor: pointer}
+		.menu-ma span {background: #7f8b94; border-radius: 15px; padding: 2px 15px; float: left; margin: 1px 0; transition: 0.5s}
+		.menu-mf span {background: #7f8b94; border-radius: 15px; padding: 2px 15px; float: left; margin: 1px 0; transition: 0.5s}
+		.menu-mf .u {transform: rotate(135deg);}
+		.menu-mf .d {opacity: 0; margin: -10px 0 0 0px}
+		.menu-mf .t {transform: rotate(45deg); margin-top: -5px;}
+
+
+	.mobile-dst {transition: 0.5s; opacity: 0; position: absolute;  width: 95%; padding: 2.5%; background: #FFF; margin: -500px 0 0 0; z-index: -9}
+	.mobile-atv {transition: 0.5s; opacity: 1; position: absolute; width: 95%; padding: 2.5%; background: #FFF; box-shadow: #ccc 0 6px 10px -1px}
+		.mobile-atv .menu-list, .mobile-dst .menu-list {}
+		.mobile-atv .menu-list li, .mobile-dst .menu-list li {margin: 10px 0; text-align: center}
+		.mobile-atv .menu-list li a, .mobile-dst .menu-list li a {color: #3f8fe0}
+		.mobile-atv .menu-list li .criar, .mobile-dst .menu-list li .criar {background: #3f8fe0; color: #FFF; border-radius: 15px; padding: 5px 10px}
+
+	.header {position: fixed; background: #FFF; width: 100%; z-index: 9999; box-shadow: #000 0 -1px 25px -4px}
+
+	.header .menu {display: none;}
+	.header .user {display: none;}
+
+	.banner {padding: 120px 0 100px 0}
+	.banner .cont {width: 98%; padding: 0 1%;}
+		.banner .titulo {font-size: 25px;}
+		.banner .frase {font-size: 18px;}
+		
+	.clientes img {margin: 10px 50px}
+
+	.correcao .exemplo {}
+		.correcao .exemplo .word {margin: 0; width: 100%}
+		.correcao .exemplo .exercicio {margin: 15px 0; width: 100%}
+		.correcao .exemplo .exercicio img {border-radius: 50%; box-shadow: #000 0px 0px 21px -6px; position: relative; z-index: 9; width: 100%; max-width: 250px; float: initial;}
+		.correcao .exemplo .exercicio .reta {background: #000; opacity: 0.2; position: absolute; width: 5px; height: 25px; position: relative; z-index: -9; float: initial; margin: 0 auto;}
+			.correcao .exemplo .exercicio .reta .circulo {width: 10px; height: 10px; background: #FFF; border-radius: 50%; float: right; box-shadow: #000 0px 0px 5px 3px; margin: -3px -2px 0 0}
+		.correcao .exemplo .exercicio .seta {position: relative; z-index: -9; transform: rotate(90deg); margin: -15px 0 0 50%;}
+			.correcao .exemplo .exercicio .seta div {background: #f1f2f2}
+			.correcao .exemplo .exercicio .seta .seta-reta {width: 150px; height: 30px; margin: 140px 0 0 0}
+			.correcao .exemplo .exercicio .seta .seta-c {width: 120px; height: 25px; transform: rotate(225deg); position: absolute; margin: -77px 0 0 39px;}
+			.correcao .exemplo .exercicio .seta .seta-b {width: 120px; height: 25px; transform: rotate(-225deg); position: absolute; margin: 22px 0 0 39px;}
+		.correcao .exemplo .exercicior img {max-width: 410px; height: auto; width: 100%;}
+
+
+.cadernos .btts {width: 244px; margin: 0 auto; padding: 15px 0 0 0}
+	.cadernos .btts .btt {padding: 15px 0; width: 120px; font-size: 18px; color: #7f8b94; transition: 0.2s; cursor: pointer; float: left;}
+
+	.cadernos .printv {background-size: 100%; padding: 5px 0 0 0; background-position: bottom; margin: 0}
+		.cadernos .printv img {width: 70%; margin: 50px 0 0 0}
+		.cadernos .printn img {display: none;}
+	.cadernos .reta {display: none}
+	.cadernos .circulo {display: none}
+	.cadernos .printv .item {position: initial; margin: 2.5% 2.5%; width: 55%; padding: 5% 20%}
+
+	.conteudo .item .extra {opacity: 1;}
+		.conteudo .item .extra .seta {margin: -6px 0 0 45%}
+
+	.conteudo .item {width: 45%; margin: 2.5% 2.5%}
+		.conteudo .first {margin-bottom: 0}
+
+	.acompanhamento {padding: 25px 0; text-align: center}
+		.acompanhamento .texto {text-align: center; width: 100%; margin-top: 25px}
+		.acompanhamento img {float: none; margin-top: 15px; width: 100%; height: auto; max-width: 487px}
+
+	.qualquer {padding: 25px 0 0 0; text-align: center}
+		.qualquer .texto {margin-top: 0; width: 100%; text-align: center}
+		.qualquer .cel  {margin: -6px 0 0 -5%; background: url(../images/mobile.png) no-repeat; float: left; width: 100%; background-size: 100%; padding: 0}
+		.qualquer .cel img {margin: 16% 0 0 13%; width: 47%;}
+
+	.atualizados .item {width: 100%}
+
+	.experimente form {margin-top: 5px; margin-left: 0}
+		.experimente form input {width: 80%; margin: 10px 0 0 0}
+		.experimente form .endereco {width: 43%; margin: 10px 0 0 -5px}
+		.experimente form button {width: auto; margin: 10px 0 0 0; position: relative;}
+
+	.rodape {}
+		.rodape .texto {width: 100%}
+		.rodape .menu {width: 100%}
+		.rodape .menu ul {width: 100%; text-align: center; margin: 10px 0 0 0}
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {  
+
+	.conteudo .item {width: 95%; margin: 5% 2.5%}
+	.conteudo .first {margin-bottom: 0}
+
+	.atualizados .item .itens {width: 50%; margin: 0 0 2.5% 0}
+}

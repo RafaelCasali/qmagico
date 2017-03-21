@@ -1,0 +1,368 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+    <!-- DESCRIÇÃO DE METAS -->
+    <meta name="keywords" content="" http-equiv="keywords" /> 
+    <meta name="description" content="" />
+    <meta name="robots" content="all" /> 
+    <meta name="language" content="pt-br" /> 
+    <meta name="classification" content="" /> 
+    <meta name="rating" content="general" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
+    <!-- CONFIGURAÇÃO PARA TWITTER
+    <meta name="twitter:card" value="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    -->
+
+    <!-- CONFIGURAÇÃO PARA FACEBOOK
+	<meta property="og:title" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:site_name" content= />
+	<meta property="og:description" content= />
+    -->
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="shortcut icon" href="favicon.ico" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript">
+    function cadernosa() {
+        var visivel = document.getElementById('aluno').className
+        if(visivel == "printn")
+            {(document.getElementById('aluno').className = "printv")(document.getElementById('professor').className = "printn")}
+        else
+            {(document.getElementById('aluno').className = "printv")(document.getElementById('professor').className = "printn")}
+    }
+
+    function cadernosp() {
+        var visivel = document.getElementById('professor').className
+        if(visivel == "printn")
+            {(document.getElementById('professor').className = "printv")(document.getElementById('aluno').className = "printn")}
+        else
+            {(document.getElementById('professor').className = "printv")(document.getElementById('aluno').className = "printn")}
+    }
+    function menu() {
+        var visivel = document.getElementById('menu-mobile').className
+        if(visivel == "mobile-dst")
+            {(document.getElementById('menu-mobile').className = "mobile-atv")(document.getElementById('menus').className = "menu-mf")}
+        else
+            {(document.getElementById('menu-mobile').className = "mobile-dst")(document.getElementById('menus').className = "menu-ma")}
+    }
+    </script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-20354974-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>QMágico - Desafio</title>
+</head>
+
+<body>
+
+<section class="header">
+    <div class="cont">
+        <img src="images/logo.png" />
+        <ul class="menu">
+            <li><a href="#">Plataforma</a></li>
+            <li><a href="#">Preço</a></li>
+            <li><a href="#">Pedagógico</a></li>
+            <li><a href="#">Suporte</a></li>    
+        </ul>
+
+        <div class="user">
+            <a href="#" class="entrar">Entrar</a>
+            <a href="#" class="criar">Criar uma plataforma</a>
+        </div>
+
+        <div class="menu-ma" id="menus" onclick="menu('menu-mobile')">
+            <span class="u"></span>
+            <span class="d"></span>
+            <span class="t"></span>
+        </div>
+
+
+
+        <div class="clear"></div>
+    </div>
+    <div class="mobile-dst" id="menu-mobile">
+        <ul class="menu-list">
+            <li><a href="#">Plataforma</a></li>
+            <li><a href="#">Preço</a></li>
+            <li><a href="#">Pedagógico</a></li>
+            <li><a href="#">Suporte</a></li>    
+            <li><a href="#">Entrar</a></li>
+            <li><a href="#" class="criar">Criar uma plataforma</a></li>
+        </ul>
+    </div>
+</section>
+
+<section class="banner">
+    <div class="cont">
+        <div class="titulo">A nova geração de tecnologia educacional.</div>
+        <div class="frase">Junte-se as escolas e professores que já estão na nova geração da educação.</div>
+        <a href="#">Assista ao vídeo</a>
+    </div>
+</section>
+
+<section class="clientes"> 
+    <div class="cont">
+            <img src="images/clientes/sesi.png" />
+            <img src="images/clientes/mackenzie.png" />
+            <img src="images/clientes/riobranco.png" />
+            <img src="images/clientes/bandeirantes.png" />
+            <img src="images/clientes/anglo.png" />
+        <div class="clear"></div>
+    </div>
+</section>
+
+<section class="cadernos">
+    <div class="cont">
+        <h2>Cadernos Digitais Inteligentes</h2>
+        <p>Suas atividades, organizadas. Seus alunos, engajados.<br/>Resultados em tempo real, em qualquer lugar.</p>
+
+        <div class="btts">
+            <div class="btt left" onclick="cadernosp()">Professor</div>
+            <div class="btt right" onclick="cadernosa()">Aluno</div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="printv" id="professor">
+            <div class="item crie">
+                Crie conteúdos iterativos para suas aulas.
+                <div class="reta">
+                    <div class="circulo"></div>
+                </div>
+            </div>
+            <div class="item organize">
+                Organize suas aulas em seções estruturadas.
+                <div class="reta">
+                    <div class="circulo"></div>
+                </div>
+            </div>
+            <div class="item libere">
+                Libere o conteúdo na hora certa para seus alunos.
+                <div class="reta">
+                    <div class="circulo"></div>
+                </div>
+            </div>
+            <img src="images/caderno-professor.png" />
+        </div>
+
+        <div class="printn" id="aluno">
+            <div class="item icone">
+                Icone do tipo do material facilitando a indentificação.
+                <div class="reta">
+                    <div class="circulo"></div>
+                </div>
+            </div>
+            <div class="item intro">
+                Introdução ao assunto que será abordado na seção.
+                <div class="reta">
+                    <div class="circulo"></div>
+                </div>
+            </div>
+            <div class="item marcador">
+                Marcador de progresso em cada conteúdo.
+                <div class="reta">
+                    <div class="circulo"></div>
+                </div>
+            </div>
+            <img src="images/caderno-aluno.png" />
+        </div>        
+    </div>
+</section>
+
+<section class="correcao">
+    <div class="cont">
+        <h2>Correção automática</h2>
+        <p>Ganhe tempo convertendo suas listas de exercícios<br/>no formato QMágico com correção automática.</p>
+
+        <div class="exemplo">
+            <div class="word">
+                <img src="images/icones/word.jpg">
+            </div>
+            <div class="exercicio">
+                <div class="reta">
+                    <div class="circulo"></div>
+                </div>
+                <img src="images/word.png">
+
+                <div class="seta">
+                    <div class="seta-reta"></div>
+                    <div class="seta-c"></div>
+                    <div class="seta-b"></div>
+                </div>
+            </div>
+            <div class="exercicior">
+                <img src="images/exercicio.png" />
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+</section>
+
+<section class="conteudo">
+    <div class="cont">
+        <h2>Conteúdos interativos</h2>
+        <p>Crie materiais didáticos para fazer parte do seu<br/>sistema de ensino digital.</p>
+
+        <div class="itens">
+            <div class="item first">
+                <img src="images/icones/article.svg" />
+                <p>Documento de texto</p>
+                <div class="extra">
+                    <div class="seta"></div>
+                    <p>As listas suportam exercícios de múltipla escolha (com correção automática), resposta curta e dissertativa.</p>
+                </div>
+                <div class="mais">+</div>                
+            </div>
+            <div class="item">
+                <img src="images/icones/exerciselist.svg" />
+                <p>Lista de exercícios</p>
+                <div class="extra">
+                    <div class="seta"></div>
+                    <p>As listas suportam exercícios de múltipla escolha (com correção automática), resposta curta e dissertativa.</p>
+                </div>  
+                <div class="mais">+</div>              
+            </div>
+            <div class="item">
+                <img src="images/icones/presentation.svg" />
+                <p>Apresentação PDF</p>
+                <div class="extra">
+                    <div class="seta"></div>
+                    <p>As listas suportam exercícios de múltipla escolha (com correção automática), resposta curta e dissertativa.</p>
+                </div>
+                <div class="mais">+</div>
+            </div>
+            <div class="item">
+                <img src="images/icones/video.svg">
+                <p>Vídeo</p>
+                <div class="extra">
+                    <div class="seta"></div>
+                    <p>As listas suportam exercícios de múltipla escolha (com correção automática), resposta curta e dissertativa.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</section>
+
+<section class="acompanhamento">
+    <div class="cont">
+        <div class="texto">
+            <h2>Acompanhamento em tempo real</h2>
+            <p>Você pode analisar em tempo real o desempenho e progresso de seus alunos.</p>
+        </div>
+        <img src="images/desempenho.png" />
+
+        <div class="clear"></div>
+    </div>
+</section>
+
+<section class="qualquer">
+    <div class="cont">
+            <div class="texto">
+            <h2>Em qualquer lugar</h2>
+            <p>Você pode acessar o QMágico de qualquer dispositivo em qualquer lugar que esteja</p>
+        </div>
+        <div class="cel">
+            <img src="images/mobile-screen.png" />
+        </div>
+
+
+        <div class="clear"></div>
+    </div>
+</section>
+
+<section class="atualizados">
+    <div class="cont">
+        <h2>Mantenha todos atualizados</h2>
+        <p>Deixe todos acompanharem o progresso do aprendizado.</p>
+
+        <div class="item">
+            <div class="itens">
+                <img src="images/icones/user.svg" />
+                <p>Pais</p>
+            </div>
+            <div class="itens">
+                <img src="images/icones/people.svg" />
+                <p>Professores</p>
+            </div>
+            <div class="itens">
+                <img src="images/icones/paste.svg" />
+                <p>Coordenadores</p>
+            </div>
+            <div class="itens">
+                <img src="images/icones/cog.svg" />
+                <p>Diretores</p>
+            </div>
+        </div>  
+
+        <div class="clear"></div>  
+    </div>
+</section>
+
+<section class="experimente">
+    <div class="cont">
+        <h2>Experimente QMágico grátis por 30 dias</h2>
+        <p>Não é obrigatório cartão de crédito, cancele a qualquer momento</p>
+
+        <form action="" method="POST">
+            <input type="text" name="nome" placeholder="Nome da plataforma">
+            <input type="text" name="endereco" placeholder="Endereço da plataforma" class="endereco">.qmagico.com.br
+            <button><img src="images/icones/seta.jpg" /></button>
+        </form>
+    </div>
+</section>
+
+<section class="rodape">
+    <div class="cont">
+        <div class="texto">
+            <img src="images/logo.png" />
+            <p>QMágico é uma ferramenta que ajuda a conectar quem ensina a quem aprende, quantificando a aprendizagem e oferecendo soluções para melhora-la</p>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li class="titulo">Usando QMágico</li>
+                <li>Plataforma</li>
+                <li>Preço</li>
+                <li>Pedagógico</li>
+                <li>Suporte</li>
+            </ul>
+            <ul>
+                <li class="titulo">QMágico</li>
+                <li>Vagas</li>
+                <li>Clientes</li>
+                <li>Desenvolvedores</li>
+                <li>Blog</li>
+            </ul>    
+            <ul>
+                <li class="titulo">Legal</li>
+                <li>Privacidade</li>
+                <li>Segurança</li>
+                <li>Termos de serviço</li>
+                <li>Políticas</li>
+            </ul>    
+        </div>
+</section>
+
+</body>
+</html>
